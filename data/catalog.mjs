@@ -8,8 +8,9 @@ import hguc from "./kits-hguc.mjs";
 import hgModern from "./kits-hg-modern.mjs";
 import others from "./kits-others.mjs";
 import nineties from "./kits-90s.mjs";
+import wave2 from "./kits-wave2.mjs";
 
-export const games = [...kyukit, ...nineties, ...mg, ...pg, ...rg, ...hguc, ...hgModern, ...others].sort(
+export const games = [...kyukit, ...nineties, ...mg, ...pg, ...rg, ...hguc, ...hgModern, ...others, ...wave2].sort(
 	(a, b) => a.released.localeCompare(b.released) || a.title.localeCompare(b.title, "ja"),
 );
 

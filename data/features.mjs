@@ -174,6 +174,44 @@ RGのような小さな部品の多いキットや、シールを貼るときに
 
 最初から全部そろえる必要はありません。1体作るごとに「ここをもっときれいにしたい」と思った道具を足していくのが、長く楽しむコツです。
 `),
+	feature("witch-from-mercury", "『水星の魔女』のガンプラ:エアリアルから始める作品別ガイド",
+		"放送とともに大ヒットした『水星の魔女』のガンプラを、物語の順に並べました。",
+		"guide", ["new", "beginner"], `
+2022年に放送が始まった『機動戦士ガンダム 水星の魔女』は、ガンプラにも大きなブームを起こしました。ここでは、作品のガンプラを物語の順にたどります。
+
+## まずはエアリアル
+
+主人公スレッタの機体[[hg-aerial]]は、作品の顔であり、近年のガンプラの象徴です。発売直後から長く品薄が続きました。手軽に作るなら[[bb-aerial]]、大きく作り込むなら[[fm-aerial]]もあります。
+
+## 物語の始まり
+
+プロローグに登場する[[hg-lfrith]]と[[hg-beguir-beu]]は、作品の前日譚の機体です。第1話でエアリアルと決闘する[[hg-dilanza-guel]]と並べると、物語の始まりの場面がそろいます。
+
+## 学園のライバルたち
+
+学園の各社はそれぞれのMSを持っています。グエルの[[hg-darilbalde]]、エランの[[hg-pharact]]、シャディクの[[hg-michaelis]]と量産機の[[hg-zowort]]。練習機の[[hg-demi-trainer]]は、改造の土台としても人気です。
+
+## 第2期と最終盤
+
+第2期では[[hg-aerial-rebuild]]が登場し、物語の最後には[[hg-calibarn]]と[[hg-schwarzette]]が現れます。第1期のエアリアルと改修型、キャリバーンを並べると、スレッタの物語が一目でわかります。
+`),
+	feature("seed-series", "『SEED』シリーズのガンプラ:ストライクから『SEED FREEDOM』まで",
+		"2002年の放送から映画『SEED FREEDOM』まで。SEEDシリーズのガンプラを、グレードをまたいで紹介します。",
+		"guide", ["grade", "new"], `
+『機動戦士ガンダムSEED』は2002年の放送で新しい世代のファンを生み、2024年の映画『SEED FREEDOM』で再び大きな盛り上がりを見せました。ここではシリーズのガンプラを、物語の順に紹介します。
+
+## SEED:ストライクとフリーダム
+
+最初の主役機ストライクは、[[mg-aile-strike-2003]]の時代から人気のキットです。今のHGなら[[hgce-aile-strike]]、手軽さなら[[eg-strike]]、大作なら[[pg-strike-2004]]と、どのグレードでも作れます。キラの2機目[[rg-freedom]]と、アスランの[[rg-justice]]はRGでそろえたい2機です。
+
+## SEED DESTINY:2人の主役機
+
+後半の主役機[[hgce-strike-freedom]]と、シンの[[hgce-destiny]]は、SEED DESTINYの顔です。最高の作り込みを求めるなら[[mgex-strike-freedom]]があります。アスランの[[hgce-infinite-justice]]も並べたい一体です。
+
+## SEED FREEDOM:新しい機体たち
+
+映画で登場した[[hg-rising-freedom]]と[[hg-immortal-justice]]、そして終盤の[[hg-mighty-strike-freedom]]。シンの[[hg-destiny-spec2-zeus]]や、話題になった[[hg-zgok-seed-freedom]]も人気です。20年以上続くシリーズを、ガンプラで振り返ってみてください。
+`),
 ];
 
 export const aboutPage = (() => {
