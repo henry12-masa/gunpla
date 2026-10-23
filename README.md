@@ -43,8 +43,12 @@
 ```bash
 npm install
 npm run dev      # http://localhost:4321
-npm run deploy   # astro build && wrangler deploy
+npm run deploy   # astro build && wrangler deploy(手動デプロイ)
 ```
+
+`main` ブランチに push すると、Cloudflare Workers Builds が自動でビルド・デプロイします(ビルド `npm run build`、デプロイ `npx wrangler deploy`)。ブランチごとのプレビュー版は本番と同じデータベースにつながるため、無効にしています。
+
+`src/layouts/Base.astro` の `google-site-verification` は Search Console の所有権確認用なので消さないでください。
 
 日本語の全文検索は trigram トークナイザが必要です。データベースを作り直したときは、管理者でログインした状態で各コレクション(kits / posts / pages)に対して `POST /_emdash/api/search/enable`(`{"collection": "...", "enabled": true, "tokenize": "trigram"}`)を実行してください。
 
