@@ -1,0 +1,116 @@
+---
+import Base from "../../layouts/Base.astro";
+import { loadCatalogIndex } from "../../lib/catalog";
+import { gradeInfo } from "../../lib/amazon";
+
+const index = await loadCatalogIndex(Astro.url.origin);
+if (!index) return new Response("名簿データを読み込めませんでした", { status: 500 });
+Astro.response.headers.set("Cache-Control", "public, max-age=3600");
+
+const fmt = new Intl.NumberFormat("ja-JP");
+const items = index.grades.map((p) => {
+	const info = gradeInfo(p.slug);
+	const first = p.years[0]?.[0];
+	const last = p.years.at(-1)?.[0];
+	return { ...p, maker: info?.scale ?? "", range: first === last ? `${first}` : `${first}〜${last}` };
+});
+---
+
+<Base title="全キット名簿" description={`1980年の旧キットから最新のHG・EGまで、ガンプラ${fmt.format(index.total)}件をグレード・年ごとにまとめた名簿。`}>
+	<header class="band intro">
+		<div class="frame">
+			<p class="eyebrow">All Kits</p>
+			<h1 class="intro__title">全キット名簿</h1>
+			<p class="intro__lead">
+				1980年の1/144ガンダムから最新のHG・EGまで、ガンプラ<strong>{fmt.format(index.total)}件</strong>を、グレードと発売年ごとに並べました。昔作ったあのキットや、限定品の発売時期も探せます。解説付きの厳選キットには「厳選」の印が付いています。
+			</p>
+		</div>
+	</header>
+
+	<section class="band section" aria-label="グレード一覧">
+		<div class="frame">
+			<ul class="pf-grid">
+				{
+					items.map((p) => (
+						<li>
+							<a href={`/catalog/${p.slug}`} class="pf">
+								<span class="pf__name">{p.label}</span>
+								<span class="pf__meta">
+									{p.maker && `${p.maker} · `}
+									{p.range}年
+								</span>
+								<span class="pf__count">
+									{fmt.format(p.count)}
+									<small>件</small>
+								</span>
+								{p.dl > 0 && <span class="pf__dl">うち限定品 {fmt.format(p.dl)}件</span>}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+			<p class="source">
+				出典:日本語版ウィキペディア「ガンプラの一覧」「マスターグレード」「パーフェクトグレード」「リアルグレード」「ハイグレード・ユニバーサルセンチュリー」「ENTRY GRADE」「FULL MECHANICS」「SDガンダム BB戦士」(<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" rel="noopener" target="_blank">CC BY-SA 4.0</a>)をもとに、{index.updated}時点で発売済みのキットを整理しました。発売予定のキットは含みません。商品名の表記は元の記事に合わせているため、ゆれや抜けがあります。
+			</p>
+		</div>
+	</section>
+</Base>
+
+<style>
+	.pf-grid {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+		gap: var(--spacing-3);
+	}
+
+	.pf {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-1);
+		height: 100%;
+		padding: var(--spacing-4) var(--spacing-5);
+		background: var(--color-surface);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-card);
+		color: var(--color-text);
+		text-decoration: none;
+		transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+	}
+
+	.pf:hover {
+		transform: translateY(-2px);
+	}
+
+	.pf__name {
+		font-size: var(--font-size-lg);
+		font-weight: 600;
+	}
+
+	.pf__meta,
+	.pf__dl {
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.pf__count {
+		margin-top: var(--spacing-2);
+		font-family: var(--font-mono);
+		font-size: var(--font-size-2xl);
+		font-weight: 500;
+	}
+
+	.pf__count small {
+		margin-left: 0.15em;
+		font-family: var(--font-body);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+
+	.source {
+		margin-top: var(--spacing-8);
+		font-size: var(--font-size-xs);
+		line-height: 1.8;
+		color: var(--color-muted);
+	}
+</style>

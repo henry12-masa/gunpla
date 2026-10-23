@@ -1,0 +1,30 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "gunpla-curation",
+	"main": "./src/worker.ts",
+	"compatibility_date": "2026-02-24",
+	"compatibility_flags": ["nodejs_compat"],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "gunpla-curation",
+			"database_id": "420df78b-7fa1-48a0-aec5-24bb41d7a5b2",
+		},
+	],
+	"kv_namespaces": [
+		{
+			"binding": "SESSION",
+			"id": "39815b02ddd04551a7b7da7adb23483e",
+		},
+	],
+	"r2_buckets": [
+		{
+			"binding": "MEDIA",
+			"bucket_name": "gunpla-curation-media",
+		},
+	],
+	"routes": [{ "pattern": "gunpla.napoblog.com", "custom_domain": true }],
+	"triggers": {
+		"crons": ["* * * * *"],
+	},
+}

@@ -1,0 +1,101 @@
+/*
+  theme.css -- your theme overrides. This is the file to edit to
+  retheme the site.
+
+  Every design token lives in src/styles/tokens.css (colors, type
+  scale, spacing, layout, shadows) with its default value. Override any
+  of them here: declarations in this file are unlayered, so they always
+  beat the @layer base defaults in tokens.css.
+
+  Colors are defined with light-dark(). Overriding with a plain color
+  changes light and dark mode at once; use light-dark(<light>, <dark>)
+  to set different values per mode.
+
+  Set the three brand tokens together, as in the example below:
+  --color-on-brand defaults to near-black in dark mode.
+
+  Webfonts are loaded in astro.config.mjs (--font-body, --font-mono).
+  Swap the loaded font there; use overrides here for system fonts or a
+  separate heading face.
+
+  Example:
+
+  :root {
+    --color-brand: light-dark(#0f766e, #2dd4bf);
+    --color-brand-hover: light-dark(#115e59, #5eead4);
+    --color-on-brand: light-dark(#ffffff, #0a0a0a);
+    --font-heading: "Iowan Old Style", Georgia, serif;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+  }
+*/
+
+:root {
+}
+
+/* ---- 組み継ぐ: ブランドと年代カラー ---- */
+:root {
+	--color-brand: light-dark(#1d4ed8, #7aa2ff);
+	--color-brand-hover: light-dark(#1e3a8a, #a5c0ff);
+	--color-on-brand: light-dark(#ffffff, #0b1220);
+}
+
+/* 年代ごとのカバータイル色。箱絵や成形色を思わせる配色 */
+[data-era] {
+	--era-bg: light-dark(#e7e5e4, #292524);
+	--era-ink: light-dark(#1c1917, #f5f5f4);
+}
+[data-era="kyukit"] { --era-bg: #f3ead7; --era-ink: #b91c1c; }
+[data-era="hg"] { --era-bg: #12224a; --era-ink: #facc15; }
+[data-era="mg"] { --era-bg: #2b2f36; --era-ink: #f1f5f9; }
+[data-era="seed"] { --era-bg: #0f3d8c; --era-ink: #ffffff; }
+[data-era="rg"] { --era-bg: #1c1917; --era-ink: #e5b453; }
+[data-era="build"] { --era-bg: light-dark(#dbeafe, #0c2a4a); --era-ink: light-dark(#1e40af, #bfdbfe); }
+[data-era="now"] { --era-bg: light-dark(#f8fafc, #111827); --era-ink: light-dark(#1d4ed8, #93c5fd); }
+
+/* 推し度バッジ */
+.tier {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.05rem 0.5rem;
+	border-radius: var(--radius-full);
+	font-family: var(--font-body);
+	font-size: var(--font-size-xs);
+	font-weight: 600;
+	line-height: 1.6;
+	border: 1px solid var(--color-border);
+	color: var(--color-text-secondary);
+}
+.tier--essential {
+	background: var(--color-brand);
+	border-color: var(--color-brand);
+	color: var(--color-on-brand);
+}
+.tier--recommended {
+	border-color: var(--color-brand);
+	color: var(--color-brand);
+}
+
+/* キットカードのグリッド */
+.game-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: var(--spacing-5);
+}
+.game-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: var(--spacing-3);
+}
+@media (max-width: 520px) {
+	.game-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--spacing-3);
+	}
+}
+
+/* 日本語の見出しを文節で折り返す(対応ブラウザのみ) */
+h1, h2, h3, .game__title, .feature__title {
+	word-break: auto-phrase;
+	text-wrap: balance;
+}
