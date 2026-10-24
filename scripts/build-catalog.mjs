@@ -11,6 +11,8 @@ import { coreName, GRADE_OF_RAW } from "../data/kit-key.mjs";
 
 const read = (name) => JSON.parse(readFileSync(new URL(`../data/catalog/${name}`, import.meta.url), "utf8"));
 const raw = [...read("raw.json"), ...read("gundamwiki.json"), ...read("additions.json")];
+// 名簿の更新日(日本時間)
+const TODAY = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 const OUT = new URL("../public/catalog-data/", import.meta.url);
 
 // 名簿での並び順(大きいグレードから)
@@ -47,5 +49,5 @@ for (const slug of ORDER) {
 	index.push({ slug, label: GRADES[slug], short: SHORT[slug], count: list.length, dl: list.filter((k) => k.l).length, years });
 }
 const total = index.reduce((n, p) => n + p.count, 0);
-writeFileSync(new URL("index.json", OUT), JSON.stringify({ updated: "2026-10-24", total, grades: index }));
+writeFileSync(new URL("index.json", OUT), JSON.stringify({ updated: TODAY, total, grades: index }));
 console.log(`全キット名簿: ${total}件 / ${index.length}グレード(厳選キットへのリンク ${linked}件 / 厳選${games.length}件)`);

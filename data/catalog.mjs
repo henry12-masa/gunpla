@@ -11,8 +11,9 @@ import nineties from "./kits-90s.mjs";
 import wave2 from "./kits-wave2.mjs";
 import wave3 from "./kits-wave3.mjs";
 import wave3hg from "./kits-wave3-hg.mjs";
+import updates from "./kits-updates.mjs";
 
-export const games = [...kyukit, ...nineties, ...mg, ...pg, ...rg, ...hguc, ...hgModern, ...others, ...wave2, ...wave3, ...wave3hg].sort(
+export const games = [...kyukit, ...nineties, ...mg, ...pg, ...rg, ...hguc, ...hgModern, ...others, ...wave2, ...wave3, ...wave3hg, ...updates].sort(
 	(a, b) => a.released.localeCompare(b.released) || a.title.localeCompare(b.title, "ja"),
 );
 

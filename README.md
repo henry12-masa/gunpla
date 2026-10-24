@@ -39,6 +39,10 @@
 3. Gundam Wiki からの追加分は `scripts/catalog/gundamwiki/`(手順はその README)で `data/catalog/gundamwiki.json` を作る
 4. `node scripts/build-catalog.mjs` で `raw.json` + `gundamwiki.json` + `additions.json` を `public/catalog-data/` に書き出す(静的アセット、ASSETSバインディングで読む)
 
+## 定期更新
+
+週2回(火・金)、`curation-sites-update` スキルで最新情報を反映する。新しい厳選は `data/kits-updates.mjs` に足し、名簿の追加は `data/catalog/` に入れる。本番DBへは `node scripts/sync-remote.mjs --url <サイト> --only <slug,...>` で変えたものだけを同期する(`--only` のときは特集・固定ページは書き直さない)。コミットの先頭は `[curation-update]`。
+
 ## 開発とデプロイ
 
 ```bash
