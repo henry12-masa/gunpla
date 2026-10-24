@@ -3,6 +3,8 @@ import { PortableText, Image } from "emdash/ui";
 import Base from "../../layouts/Base.astro";
 import KitCard from "../../components/KitCard.astro";
 import AmazonBox from "../../components/AmazonBox.astro";
+import AdUnit from "../../components/AdUnit.astro";
+import { splitAtHeading } from "../../lib/ads";
 import { amazonForGame, gradeInfo, toolLinks } from "../../lib/amazon";
 import { TIERS, eraBySlug, formatReleased, kitsUrl, loadGames, relatedGames } from "../../lib/kits";
 
@@ -20,6 +22,8 @@ const sameYear = games.filter((g) => g.year === game.year && g.slug !== game.slu
 const prev = games[index - 1];
 const next = games[index + 1];
 const hasContent = Array.isArray(game.content) && game.content.length > 0;
+// 本文の2つ目の見出しの前に記事内広告を挟む
+const [contentHead, contentTail] = hasContent ? splitAtHeading(game.content as any[]) : [[], []];
 const amazonKit = amazonForGame(game);
 // 同じグレードの一覧と、作るための道具
 const grade = game.grades[0] ? gradeInfo(game.grades[0].slug) : null;
@@ -60,6 +64,7 @@ const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().sli
 
 	<section class="band section">
 		<div class="frame game-body">
+			<div class="game-side">
 			<dl class="facts">
 				<div>
 					<dt>推し度</dt>
@@ -123,6 +128,8 @@ const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().sli
 					)
 				}
 			</dl>
+			<AdUnit kind="side" class="game-side__ad" />
+			</div>
 
 			<div class="game-main">
 				{
@@ -138,7 +145,9 @@ const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().sli
 						<section class="review" aria-labelledby="review-heading">
 							<h2 id="review-heading" class="sub-title">解説</h2>
 							<div class="prose">
-								<PortableText value={game.content as any} />
+								<PortableText value={contentHead} />
+								<AdUnit kind="article" />
+								{contentTail.length > 0 && <PortableText value={contentTail} />}
 							</div>
 						</section>
 					)
@@ -279,6 +288,18 @@ const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().sli
 		align-items: start;
 	}
 
+	.game-side {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-8);
+		align-self: stretch;
+	}
+
+	.game-side__ad {
+		position: sticky;
+		top: var(--spacing-6);
+	}
+
 	.facts {
 		display: flex;
 		flex-direction: column;
@@ -409,6 +430,11 @@ const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().sli
 
 		.game-head__cover {
 			max-width: 360px;
+		}
+
+		/* 1列のときは本文中の広告だけにする */
+		.game-side__ad {
+			display: none;
 		}
 	}
 </style>

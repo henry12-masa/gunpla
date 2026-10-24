@@ -12,6 +12,8 @@ import { Comments, CommentForm } from "emdash/ui/comments";
 import Base from "../../layouts/Base.astro";
 import Byline from "../../components/Byline.astro";
 import PostCard from "../../components/PostCard.astro";
+import AdUnit from "../../components/AdUnit.astro";
+import { splitAtHeading } from "../../lib/ads";
 import { formatDate } from "../../utils/locale";
 import { getReadingTime } from "../../utils/reading-time";
 import { resolveBlogSiteIdentity } from "../../utils/site-identity";
@@ -108,6 +110,9 @@ const hasHeadings = (post.data.content ?? []).some(
 		"style" in block &&
 		(block.style === "h2" || block.style === "h3"),
 );
+
+// 本文の2つ目の見出しの前に記事内広告を挟む
+const [contentHead, contentTail] = splitAtHeading((post.data.content ?? []) as any[]);
 ---
 
 <Base
@@ -234,7 +239,9 @@ const hasHeadings = (post.data.content ?? []).some(
 
 				<div class="post-main">
 					<div class="prose" data-post-content>
-						<PortableText value={post.data.content} />
+						<PortableText value={contentHead} />
+						<AdUnit kind="article" />
+						{contentTail.length > 0 && <PortableText value={contentTail} />}
 					</div>
 
 					<section class="post-comments" aria-labelledby="comments-title">
@@ -259,6 +266,8 @@ const hasHeadings = (post.data.content ?? []).some(
 						<h2 id="widgets-title" class="sr-only">関連情報</h2>
 						<WidgetArea name="sidebar" />
 					</aside>
+
+					<AdUnit kind="side" class="post-rail__ad" />
 				</div>
 			</div>
 		</div>
@@ -745,6 +754,10 @@ const hasHeadings = (post.data.content ?? []).some(
 	}
 
 	/* Sidebar widgets */
+	.post-rail :global(.post-rail__ad) {
+		margin-block-start: var(--spacing-8);
+	}
+
 	:global(.post-widgets:not(:has(.widget))) {
 		display: none;
 	}
