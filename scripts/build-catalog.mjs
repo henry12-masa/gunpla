@@ -2,6 +2,7 @@
 //   public/catalog-data/index.json            グレードごとの件数と年ごとの件数
 //   public/catalog-data/<グレード>/<年>.json  その年の発売キット [[発売年月, 商品名, 作品, 限定なら1, 厳選slug], ...]
 // 厳選キット(data/catalog.mjs)と商品名・発売年月が一致するものには、キットページへのリンク用に slug を付ける。
+// data/catalog/gundamwiki.json は、英語版ファンWiki「Gundam Wiki」から足した限定品など(scripts/catalog/gundamwiki/)。
 // data/catalog/additions.json は、元の記事に載っていないキットを手で足す分。
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { games } from "../data/catalog.mjs";
@@ -9,7 +10,7 @@ import { GRADES } from "../data/taxonomies.mjs";
 import { coreName, GRADE_OF_RAW } from "../data/kit-key.mjs";
 
 const read = (name) => JSON.parse(readFileSync(new URL(`../data/catalog/${name}`, import.meta.url), "utf8"));
-const raw = [...read("raw.json"), ...read("additions.json")];
+const raw = [...read("raw.json"), ...read("gundamwiki.json"), ...read("additions.json")];
 const OUT = new URL("../public/catalog-data/", import.meta.url);
 
 // 名簿での並び順(大きいグレードから)
@@ -46,5 +47,5 @@ for (const slug of ORDER) {
 	index.push({ slug, label: GRADES[slug], short: SHORT[slug], count: list.length, dl: list.filter((k) => k.l).length, years });
 }
 const total = index.reduce((n, p) => n + p.count, 0);
-writeFileSync(new URL("index.json", OUT), JSON.stringify({ updated: "2026-10-23", total, grades: index }));
+writeFileSync(new URL("index.json", OUT), JSON.stringify({ updated: "2026-10-24", total, grades: index }));
 console.log(`全キット名簿: ${total}件 / ${index.length}グレード(厳選キットへのリンク ${linked}件 / 厳選${games.length}件)`);

@@ -28,15 +28,16 @@
 - 名簿から商品名を探す: `node scripts/find-kit.mjs <正規表現> [グレード]`
 - `data/taxonomies.mjs` に年代・グレード・作品・推し度、`data/grades.mjs` にグレードガイドと道具のAmazonリンク、`data/features.mjs` に特集記事
 - `node scripts/build-seed.mjs` で `seed/seed.json` を生成(seed は空のデータベースにだけ適用される)
-- 公開中のサイトへの反映は `node scripts/sync-remote.mjs --url https://gunpla.napoblog.com`(先に `npx emdash login`)
+- 公開中のサイトへの反映は `node scripts/sync-remote.mjs --url https://gunpla.napoblog.com`(先に `npx emdash login`)。キットに加えて特集と「このサイトについて」も同期する(`--posts-only` で特集だけ)
 
 ## 全キット名簿
 
-日本語版ウィキペディア「ガンプラの一覧」と各グレードの記事(CC BY-SA 4.0)から作っています。
+日本語版ウィキペディア「ガンプラの一覧」と各グレードの記事、「SEED HG」「SDガンダムワールド 三国創傑伝」(CC BY-SA 4.0)から作り、ウィキペディアにない限定品などを英語版ファンWiki「Gundam Wiki」(CC BY-SA 3.0)から足しています。
 
 1. `scripts/catalog/fetch.mjs <記事名...>` で記事のHTMLを取得
 2. `python scripts/catalog/extract.py`(表は `tparse.py` で読む)で `kits.json` を作り、`data/catalog/raw.json` に置く
-3. `node scripts/build-catalog.mjs` で `public/catalog-data/` に書き出す(静的アセット、ASSETSバインディングで読む)
+3. Gundam Wiki からの追加分は `scripts/catalog/gundamwiki/`(手順はその README)で `data/catalog/gundamwiki.json` を作る
+4. `node scripts/build-catalog.mjs` で `raw.json` + `gundamwiki.json` + `additions.json` を `public/catalog-data/` に書き出す(静的アセット、ASSETSバインディングで読む)
 
 ## 開発とデプロイ
 

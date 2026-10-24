@@ -2,7 +2,7 @@
 // 全キット名簿と厳選キットを突き合わせるときに使う。
 export const coreName = (t) =>
 	t.normalize("NFKC").toLowerCase()
-		.replace(/^(hguc|hgce|hgac|hgbf|hgbd|hgfc|hgcc|hg|mg|rg|pg|pg unleashed|mgex|mgsd|re\/100|entry grade|full mechanics|bb戦士|legend bb|ハイレゾリューションモデル)\s+/, "")
+		.replace(/^(hguc|hgce|hgac|hgbf|hgbd|hgfc|hgcc|hg|mg|rg|pg|pg unleashed|mgex|mgsd|re\/100|entry grade|full mechanics|bb戦士|legend bb|legendbb|sdガンダム クロスシルエット|sdガンダム exスタンダード|sdw heroes|sdガンダムワールド 三国創傑伝|sdガンダム gジェネレーション|ハイレゾリューションモデル)\s+/, "")
 		.replace(/1\/\d+\s*/g, "")
 		.replace(/メガサイズモデル|フルメカニクス|ハイレゾリューションモデル/g, "")
 		.replace(/\b[a-z]{1,6}[a-z0-9]*-[\w/\-[\]]*\s+/g, "")

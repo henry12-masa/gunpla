@@ -1,16 +1,17 @@
-// data/ のキットデータを、稼働中のEmDashサイトに反映する(キットの追加・更新、用語・メニューの追加)。
+// data/ のキットデータと特集を、稼働中のEmDashサイトに反映する(キット・特集・固定ページの追加・更新、用語・メニューの追加)。
 // seed は空のデータベースにしか適用されないため、公開後のデータ更新はこのスクリプトで行う。
 //
 // 使い方:
 //   ローカル:  node scripts/sync-remote.mjs --url http://localhost:4340   (開発用の dev-bypass で認証)
 //   本番:      npx emdash login --url https://gunpla.napoblog.com   (最初に一度)
 //              node scripts/sync-remote.mjs --url https://gunpla.napoblog.com
-//   --dry-run を付けると、書き込まずに差分の件数だけ表示する。
+//   --dry-run を付けると、書き込まずに差分の件数だけ表示する。--posts-only で特集と固定ページだけを同期する。
 import { readFileSync, existsSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
 import { ERAS, GRADES, SERIES, eraForYear } from "../data/taxonomies.mjs";
 import { games, bodyToPortableText } from "../data/catalog.mjs";
+import { features, aboutPage } from "../data/features.mjs";
 
 const args = process.argv.slice(2);
 const argValue = (name) => {
@@ -186,7 +187,67 @@ async function syncGames() {
 	return { created, updated, failures, total: games.length };
 }
 
-// ---- 4. メニュー
+// ---- 4. 特集(posts)と固定ページ(pages)
+async function listAll(collection) {
+	const map = new Map();
+	let cursor;
+	do {
+		const qs = new URLSearchParams({ limit: "100", status: "all" });
+		if (cursor) qs.set("cursor", cursor);
+		const result = await api("GET", `/content/${collection}?${qs}`);
+		for (const item of result.items ?? []) map.set(item.slug, item);
+		cursor = result.nextCursor;
+	} while (cursor);
+	return map;
+}
+
+async function upsert(collection, existing, slug, payload) {
+	const current = existing.get(slug);
+	if (DRY) return current ? "updated" : "created";
+	if (current) {
+		await api("PUT", `/content/${collection}/${current.id}`, payload);
+		await api("POST", `/content/${collection}/${current.id}/publish`, {});
+		return "updated";
+	}
+	const result = await api("POST", `/content/${collection}`, { ...payload, slug });
+	const id = result.item?.id ?? result.id;
+	await api("POST", `/content/${collection}/${id}/publish`, {});
+	return "created";
+}
+
+async function syncPosts() {
+	const count = { created: 0, updated: 0 };
+	const failures = [];
+	const posts = await listAll("posts");
+	// 筆者「組み継ぐ編集部」(seed の byline-editorial)を付ける。見つからなければ筆者なしで保存する
+	let bylines;
+	try {
+		const result = await api("GET", "/admin/bylines?limit=100");
+		const editorial = (result.items ?? result.bylines ?? result).find?.((b) => b.slug === "editorial");
+		if (editorial) bylines = [{ bylineId: editorial.id }];
+	} catch {}
+	for (const f of features) {
+		const payload = {
+			data: { title: f.title, excerpt: f.excerpt, content: f.content },
+			taxonomies: { category: [f.category], tag: f.tags },
+			...(bylines ? { bylines } : {}),
+		};
+		try {
+			count[await upsert("posts", posts, f.slug, payload)]++;
+		} catch (error) {
+			failures.push(`${f.slug}: ${error.message}`);
+		}
+	}
+	const pages = await listAll("pages");
+	try {
+		count[await upsert("pages", pages, aboutPage.slug, { data: aboutPage.data })]++;
+	} catch (error) {
+		failures.push(`page ${aboutPage.slug}: ${error.message}`);
+	}
+	return { ...count, failures };
+}
+
+// ---- 5. メニュー
 async function ensureMenuItem(label, url, after) {
 	const menu = await api("GET", "/menus/primary");
 	const items = menu.items ?? [];
@@ -207,11 +268,17 @@ console.log(`同期先: ${BASE}(認証: ${how})${DRY ? " [dry-run]" : ""}`);
 console.log(`項目 amazon_query: ${await ensureFields()}`);
 const terms = await ensureTerms();
 console.log(`用語の追加: ${terms.length ? terms.join(", ") : "なし"}`);
-const result = args.includes("--menu-only") ? { created: 0, updated: 0, failures: [], total: 0 } : await syncGames();
+const skipKits = args.includes("--menu-only") || args.includes("--posts-only");
+const result = skipKits ? { created: 0, updated: 0, failures: [], total: 0 } : await syncGames();
 console.log(`キット: 新規 ${result.created} / 更新 ${result.updated} / 全 ${result.total}`);
 if (result.failures.length) {
 	console.log(`失敗 ${result.failures.length}件:`);
 	for (const f of result.failures.slice(0, 20)) console.log("  " + f);
+}
+if (!args.includes("--menu-only")) {
+	const posts = await syncPosts();
+	console.log(`特集・固定ページ: 新規 ${posts.created} / 更新 ${posts.updated}`);
+	for (const f of posts.failures) console.log("  失敗 " + f);
 }
 console.log(`メニュー「グレードガイド」: ${await ensureMenuItem("グレードガイド", "/grades", "/timeline")}`);
 console.log(`メニュー「全キット名簿」: ${await ensureMenuItem("全キット名簿", "/catalog", "/grades")}`);

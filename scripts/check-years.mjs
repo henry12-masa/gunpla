@@ -7,6 +7,7 @@ import { resolve } from "node:path";
 
 const raw = [
 	...JSON.parse(readFileSync(new URL("../data/catalog/raw.json", import.meta.url), "utf8")),
+	...JSON.parse(readFileSync(new URL("../data/catalog/gundamwiki.json", import.meta.url), "utf8")),
 	...JSON.parse(readFileSync(new URL("../data/catalog/additions.json", import.meta.url), "utf8")),
 ];
 import { coreName as core, GRADE_OF_RAW } from "../data/kit-key.mjs";

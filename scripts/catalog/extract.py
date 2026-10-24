@@ -1,6 +1,7 @@
 # ガンプラ全キット名簿を作る。
 #  - グレード別ページ(MG/PG/RG/HGUC/EG/FM/BB戦士)の表
 #  - 「ガンプラの一覧」の箇条書き(作品別・グレード別)
+#  - 個別記事「SEED HG」の箇条書き
 # 出力: kits.json  [{n:名前, g:グレード, s:スケール, d:YYYY-MM, w:作品, m:型式番号, l:限定なら1}]
 import json, re, html, unicodedata
 from html.parser import HTMLParser
@@ -65,6 +66,15 @@ TABLE_PAGES = {
     'p_ハイグレード・ユニバーサルセンチュリー.html': ('HG', '1/144'), 'p_ENTRY_GRADE.html': ('EG', '1/144'),
     'p_FULL_MECHANICS.html': ('FM', '1/100'), 'p_SDガンダム_BB戦士.html': ('SD', ''),
 }
+# SDガンダム BB戦士の記事は、BB戦士以外のSDシリーズ(クロスシルエット、EXスタンダードなど)の表も持つ。見出しからシリーズ名を付ける
+SD_SERIES = [('クロスシルエット', 'SDガンダム クロスシルエット'), ('エクスタンダード', 'SDガンダム EXスタンダード'), ('ヒーローズ', 'SDW HEROES'),
+             ('Gジェネレーション', 'SDガンダム Gジェネレーション'), ('ちーびー戦士', 'SDガンダム ちーびー戦士'), ('戦国英雄', 'SDガンダム戦国英雄'),
+             ('三国伝 Brave Battle Warriors', 'BB戦士三国伝'), ('SDガンダムフォース', 'BB戦士 SDガンダムフォース')]
+def sd_prefix(heads):
+    for w, p in SD_SERIES:
+        if w in heads: return p
+    return 'BB戦士'
+
 kits = []
 for f, (grade, scale) in TABLE_PAGES.items():
     p = P(); p.feed(open(f, encoding='utf-8').read())
@@ -90,7 +100,7 @@ for f, (grade, scale) in TABLE_PAGES.items():
             model = clean(row[mi][0]) if mi is not None and len(row) > mi else ''
             gr = grade_of(name, grade)
             if gr == 'RE/100' and not name.startswith('RE/100'): name = 'RE/100 ' + name
-            if f.startswith('p_SD') and not re.match(r'^(BB|SD|LEGEND|LEGENDBB)', name): name = 'BB戦士 ' + name
+            if f.startswith('p_SD') and not re.match(r'^(BB|SD|LEGEND|LEGENDBB)', name): name = sd_prefix(heads) + ' ' + name
             PREFIX = {'MG': 'MG', 'PG': 'PG', 'RG': 'RG', 'EG': 'ENTRY GRADE', 'FM': 'FULL MECHANICS'}
             if f.startswith('p_ハイグレード'): PREFIX['HG'] = 'HGUC'
             if gr in PREFIX and not re.match(r'^(HG|MG|RG|PG|EG|ENTRY|FULL|1/\d+|フルメカ|MGEX|MGSD|PERFECT)', name):
@@ -189,22 +199,78 @@ for it in l.items:
     kits.append({'n': name, 'g': grade, 's': scale_of(name), 'd': ym(date_s), 'w': work, 'm': model_m.group(1) if model_m else '',
                  'l': 1 if is_limited(' '.join([h3, h4, label])) or re.search(r'限定|賞品|景品|付録|同梱|非売品', rest) else 0})
 
+# ---------- 個別記事の箇条書き: 「SEED HG」(SEED系のHG・1/144コレクション・1/100・1/60。HGCE以前)
+def article_items(f):
+    s = open(f, encoding='utf-8').read()
+    s = re.sub(r'<sup.*?</sup>|<style.*?</style>', '', s, flags=re.S)
+    t = re.sub(r'<h([2345])[^>]*>(.*?)</h\1>', lambda m: '\n#' + m.group(1) + ' ' + re.sub('<[^>]+>', '', m.group(2)) + '\n', s, flags=re.S)
+    t = re.sub(r'<li>', '\n- ', t)
+    t = html.unescape(re.sub(r'<[^>]+>', '', t))
+    h = {}
+    for line in t.split('\n'):
+        line = line.strip()
+        m = re.match(r'^#(\d) (.*)', line)
+        if m: h = {k: v for k, v in h.items() if k < int(m.group(1))}; h[int(m.group(1))] = re.sub(r'\[編集.*', '', m.group(2)).strip(); continue
+        if line.startswith('- '): yield dict(h), clean(line[2:])
+SEED_WORK = {'ASTRAY': '機動戦士ガンダムSEED ASTRAY', 'MSV': '機動戦士ガンダムSEED MSV', 'DESTINY': '機動戦士ガンダムSEED DESTINY', 'STARGAZER': '機動戦士ガンダムSEED C.E.73 STARGAZER',
+             'FRAME ASTRAYS': '機動戦士ガンダムSEED FRAME ASTRAYS', 'ASTRAY B': '機動戦士ガンダムSEED DESTINY ASTRAY', 'ASTRAY R': '機動戦士ガンダムSEED DESTINY ASTRAY'}
+for h, t in article_items('p_SEED_HG.html'):
+    h2, h3 = h.get(2, ''), h.get(3, '')
+    m = re.match(r'^(.*?)[（(]([^（）()]*?\d{4}年[^（）()]*?)[）)]', t)
+    if not m or '予定' in m.group(2): continue
+    name = re.sub(r'^(R?\d{1,3})\s+', '', m.group(1).strip()); d = ym(m.group(2))
+    work = '機動戦士ガンダムSEED'
+    for w, full in SEED_WORK.items():
+        if w in h3: work = full
+    lim = 1 if '限定' in h3 else 0
+    if h2.startswith('SEED HG'):
+        grade = 'HG'
+        if not name.startswith(('HG', '1/144')): name = 'HG 1/144 ' + name
+        if 'リニューアル' in h3: name = name.replace('HG 1/144 ', 'HG 1/144 リマスター ', 1)
+    else:
+        sc = re.match(r'^(1/\d+)', h2).group(1)
+        grade = 'その他'
+        if not name.startswith('1/'): name = sc + ' ' + name
+    mm = re.search(r'(?:^|\s)([A-Z]{1,6}[A-Z0-9]*-[\w/\-\[\]]*\d[\w/\-\[\]]*)\s', name)
+    kits.append({'n': name, 'g': grade, 's': scale_of(name), 'd': d, 'w': work, 'm': mm.group(1) if mm else '', 'l': lim})
+
+# ---------- 個別記事: 「SDガンダムワールド 三国創傑伝」のガンプラ節
+# 日本ではガンダムベース東京・福岡の限定販売(2019〜2020年)が先で、2021年に一般販売。両方を載せる
+s = open('p_SDガンダムワールド_三国創傑伝.html', encoding='utf-8').read()
+s = s[s.index('id="ガンプラ"'):]
+for m in re.finditer(r'<dt>(.*?)</dt>\s*</dl>\s*<ul>(.*?)</ul>', s, re.S):
+    dt = clean(re.sub(r'<[^>]+>', '', m.group(1)))
+    dates = re.findall(r'(\d{4})年(\d{1,2})月', dt)
+    if not dates: continue
+    for li in re.findall(r'<li>(.*?)</li>', m.group(2), re.S):
+        n = clean(html.unescape(re.sub(r'<[^>]+>', '', li)))
+        if 'ハロプラ' in n: continue
+        first = f"{dates[0][0]}-{int(dates[0][1]):02d}"
+        kits.append({'n': f'SDガンダムワールド 三国創傑伝 {n}（ガンダムベース限定先行販売）', 'g': 'SD', 's': '', 'd': first, 'w': 'SDガンダムワールド 三国創傑伝', 'm': '', 'l': 1})
+        if len(dates) > 1:
+            kits.append({'n': f'SDガンダムワールド 三国創傑伝 {n}', 'g': 'SD', 's': '', 'd': f"{dates[1][0]}-{int(dates[1][1]):02d}", 'w': 'SDガンダムワールド 三国創傑伝', 'm': '', 'l': 0})
+
 # ---------- 整理
 def core(n):
     n = unicodedata.normalize('NFKC', n)
-    n = re.sub(r'^(HGUC|HGCE|HGAC|HGBF|HGBD:R|HGBD|HGBM|HGBC|HGFC|HG|MG|RG|PG|EG|ENTRY GRADE|MGEX|MGSD)\s+', '', n)
+    n = re.sub(r'^(HGUC|HGCE|HGAC|HGBF|HGBD:R|HGBD|HGBM|HGBC|HGFC|HG|MG|RG|PG|EG|ENTRY GRADE|MGEX|MGSD|SDW HEROES|SDガンダムワールド 三国創傑伝)\s+', '', n)
     n = re.sub(r'1/\d+\s*', '', n)
     n = re.sub(r'^[A-Z]{1,6}[A-Z0-9]*-[\w/\-\[\]]*\s+', '', n)
     n = re.sub(r'\[\d+\]|［\d+］', '', n)
     return re.sub(r'[\s・･\-_]', '', n).lower()
 def key(k): return (core(k['n']), k['d'][:4], k['g'])
-seen = set(); out = []
+seen = {}; out = []
 for k in kits:
+    k['n'] = re.sub(r'^(HGUC|HGCE|HGAC|HG|MG|RG|PG)\s?/(\d+)\s', r'\1 1/\2 ', k['n'])  # 記事側で「1」が欠けた表記を直す
+    if not k['s']: k['s'] = scale_of(k['n'])
     if not k['d']: continue
     if k['d'] > '2026-10': continue
     kk = key(k)
-    if kk in seen: continue
-    seen.add(kk); out.append(k)
+    if kk in seen:
+        # SDW HEROESの表の000番は三国創傑伝のキットなので、三国創傑伝側の表記を残す
+        if k['n'].startswith('SDガンダムワールド 三国創傑伝'): out[seen[kk]] = k
+        continue
+    seen[kk] = len(out); out.append(k)
 mw = {}
 cw = {}
 for k in out:
