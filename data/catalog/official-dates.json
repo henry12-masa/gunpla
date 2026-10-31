@@ -869,5 +869,36 @@
   "d": "1989-07",
   "official": "BB戦士36 武者サイコガンダム",
   "url": "https://bandai-hobby.net/item/01_3270/"
+ },
+ {
+  "n": "BB戦士 SDガンダムフォース 武者頑駄無 騎馬王丸",
+  "from": "2004-07",
+  "d": "2004-08",
+  "official": "SDGF 騎馬王丸(キバオウマル)",
+  "url": "https://bandai-hobby.net/item/01_3746/"
+ },
+ {
+  "n": "BB戦士 カゲニンジャシャザク",
+  "from": "1989-08",
+  "d": "1989-07",
+  "official": "ＢＢ戦士 33 影忍者シャザク",
+  "url": "https://bandai-hobby.net/item/01_3265/",
+  "rename": "BB戦士 33 影忍者シャザク"
+ },
+ {
+  "n": "MG 1/100 OZ-13MS ガンダムエピオン［クロスコントラストカラーズ/クリアホワイト］（イベント限定）",
+  "from": "2023-12",
+  "d": "2024-03",
+  "official": "MG 1/100 ガンダムエピオンEW [CROSS CONTRAST COLORS / CLEAR WHITE]",
+  "url": "https://bandai-hobby.net/item/01_6682/",
+  "rename": "MG 1/100 ガンダムエピオンEW [CROSS CONTRAST COLORS / CLEAR WHITE](イベント限定)"
+ },
+ {
+  "n": "MG 1/100 XXXG-00W0 ウイングガンダムゼロEW Ver.Ka［クロスコントラストカラーズ/クリアパープル］（イベント限定）",
+  "from": "2023-12",
+  "d": "2024-03",
+  "official": "MG 1/100 ウイングガンダムゼロEW [CROSS CONTRAST COLORS / CLEAR PURPLE]",
+  "url": "https://bandai-hobby.net/item/01_6683/",
+  "rename": "MG 1/100 ウイングガンダムゼロEW [CROSS CONTRAST COLORS / CLEAR PURPLE](イベント限定)"
  }
 ]
