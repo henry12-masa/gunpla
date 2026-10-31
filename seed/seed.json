@@ -9442,147 +9442,6 @@
 				}
 			},
 			{
-				"id": "kit-hguc-s-gundam",
-				"slug": "hguc-s-gundam",
-				"status": "published",
-				"data": {
-					"title": "HGUC 1/144 MSA-0011 Sガンダム",
-					"model_number": "MSA-0011",
-					"release_year": 2001,
-					"released": "2001-08",
-					"scale": "1/144",
-					"tier": "deep",
-					"summary": "『ガンダム・センチネル』の主役機を、初期のHGUCで。",
-					"curator_note": "雑誌の企画から生まれたガンダムが、1/144に。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se0",
-									"text": "どんなキット",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se1",
-									"text": "雑誌の企画から生まれた『ガンダム・センチネル』の主役機、Sガンダムの2001年のHGUC。大きな体と、たくさんのビーム兵器が特徴だ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se2",
-									"text": "組みどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se3",
-									"text": "初期のHGUCらしく、部品は少なめで組みやすい。白い機体を成形色で分けている。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se4",
-									"text": "ガンプラ史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se5",
-									"text": "翌年にはEx-SガンダムのHGUCも発売され、MGでもSガンダムとEx-Sが続いた。センチネルのキットは旧キットの時代から人気が高い。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se6",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hguc-s-gundam-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hguc-s-gundam-se7",
-									"text": "ガンダム・センチネルのファン、初期のHGUCを集めている人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": ""
-				},
-				"taxonomies": {
-					"era": [
-						"seed"
-					],
-					"grade": [
-						"hg"
-					],
-					"series": [
-						"sentinel"
-					]
-				}
-			},
-			{
 				"id": "kit-mg-cubelei",
 				"slug": "mg-cubelei",
 				"status": "published",
@@ -9604,7 +9463,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-se8",
+									"_key": "mg-cubelei-se0",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -9618,7 +9477,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-se9",
+									"_key": "mg-cubelei-se1",
 									"text": "『機動戦士Ζガンダム』『ΖΖ』に登場する、ハマーン・カーンの専用機キュベレイの1/100キット。肩の大きなバインダーと、ファンネルを収める尻尾のような部分が特徴だ。",
 									"marks": []
 								}
@@ -9632,7 +9491,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-sea",
+									"_key": "mg-cubelei-se2",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -9646,7 +9505,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-seb",
+									"_key": "mg-cubelei-se3",
 									"text": "バインダーは大きく動き、広げると印象がまったく変わる。白を基調とした機体なので、表面をきれいに整えるだけで仕上がりが良くなる。",
 									"marks": []
 								}
@@ -9660,7 +9519,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-sec",
+									"_key": "mg-cubelei-se4",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -9674,7 +9533,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-sed",
+									"_key": "mg-cubelei-se5",
 									"text": "ファンネルを使うニュータイプ専用機の代表として、キュベレイはHGUCでも何度も立体化された。MGはその決定版として長く親しまれている。",
 									"marks": []
 								}
@@ -9688,7 +9547,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-see",
+									"_key": "mg-cubelei-se6",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -9702,7 +9561,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "mg-cubelei-sef",
+									"_key": "mg-cubelei-se7",
 									"text": "ハマーン様のファン、美しい曲線の機体を飾りたい人に。",
 									"marks": []
 								}
@@ -9720,6 +9579,147 @@
 					],
 					"series": [
 						"zeta"
+					]
+				}
+			},
+			{
+				"id": "kit-hguc-s-gundam",
+				"slug": "hguc-s-gundam",
+				"status": "published",
+				"data": {
+					"title": "HGUC 1/144 MSA-0011 Sガンダム",
+					"model_number": "MSA-0011",
+					"release_year": 2001,
+					"released": "2001-09",
+					"scale": "1/144",
+					"tier": "deep",
+					"summary": "『ガンダム・センチネル』の主役機を、初期のHGUCで。",
+					"curator_note": "雑誌の企画から生まれたガンダムが、1/144に。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-se8",
+									"text": "どんなキット",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-se9",
+									"text": "雑誌の企画から生まれた『ガンダム・センチネル』の主役機、Sガンダムの2001年のHGUC。大きな体と、たくさんのビーム兵器が特徴だ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-sea",
+									"text": "組みどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-seb",
+									"text": "初期のHGUCらしく、部品は少なめで組みやすい。白い機体を成形色で分けている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-sec",
+									"text": "ガンプラ史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-sed",
+									"text": "翌年にはEx-SガンダムのHGUCも発売され、MGでもSガンダムとEx-Sが続いた。センチネルのキットは旧キットの時代から人気が高い。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-see",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hguc-s-gundam-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hguc-s-gundam-sef",
+									"text": "ガンダム・センチネルのファン、初期のHGUCを集めている人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": ""
+				},
+				"taxonomies": {
+					"era": [
+						"seed"
+					],
+					"grade": [
+						"hg"
+					],
+					"series": [
+						"sentinel"
 					]
 				}
 			},
@@ -11282,7 +11282,7 @@
 					"title": "HGUC 1/144 ガンダム NT-1",
 					"model_number": "RX-78NT-1",
 					"release_year": 2004,
-					"released": "2004-05",
+					"released": "2004-06",
 					"scale": "1/144",
 					"tier": "deep",
 					"summary": "アムロのために作られた「アレックス」をHGUCで。",
@@ -21007,147 +21007,6 @@
 				}
 			},
 			{
-				"id": "kit-rg-freedom",
-				"slug": "rg-freedom",
-				"status": "published",
-				"data": {
-					"title": "RG 1/144 ZGMF-X10A フリーダムガンダム",
-					"model_number": "ZGMF-X10A",
-					"release_year": 2011,
-					"released": "2011-07",
-					"scale": "1/144",
-					"tier": "recommended",
-					"summary": "青い翼のフリーダムを1/144の精密さで。SEEDのRGの代表。",
-					"curator_note": "翼を広げた小さなフリーダムに、RGの技術が詰まっている。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-sw8",
-									"text": "どんなキット",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-sw9",
-									"text": "『機動戦士ガンダムSEED』でキラが乗るフリーダムのRG。背中の青い翼と、腰のレールガンを細かく再現している。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-swa",
-									"text": "組みどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-swb",
-									"text": "翼を広げると、小さなサイズでも華やかな姿になる。関節がよく動き、空中で全砲門を構えるポーズも決まる。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-swc",
-									"text": "ガンプラ史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-swd",
-									"text": "翌年にはジャスティスのRGも発売され、キラとアスランの2機がRGでそろった。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-swe",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-freedom-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-freedom-swf",
-									"text": "SEEDのファン、精密な1/144を作りたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": ""
-				},
-				"taxonomies": {
-					"era": [
-						"rg"
-					],
-					"grade": [
-						"rg"
-					],
-					"series": [
-						"seed"
-					]
-				}
-			},
-			{
 				"id": "kit-hgfc-shining",
 				"slug": "hgfc-shining",
 				"status": "published",
@@ -21169,7 +21028,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swg",
+									"_key": "hgfc-shining-sw8",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -21183,7 +21042,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swh",
+									"_key": "hgfc-shining-sw9",
 									"text": "『機動武闘伝Gガンダム』の前半の主役機、シャイニングガンダムのHGFC。格闘技を意識した動く関節を持っている。",
 									"marks": []
 								}
@@ -21197,7 +21056,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swi",
+									"_key": "hgfc-shining-swa",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -21211,7 +21070,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swj",
+									"_key": "hgfc-shining-swb",
 									"text": "劇中のスーパーモードを意識した作りで、拳を突き出すポーズがよく似合う。",
 									"marks": []
 								}
@@ -21225,7 +21084,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swk",
+									"_key": "hgfc-shining-swc",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -21239,7 +21098,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swl",
+									"_key": "hgfc-shining-swd",
 									"text": "1994年のHGから17年後の作り直し。ゴッドガンダムのHGFCと並べると、主人公ドモンの2機がそろう。",
 									"marks": []
 								}
@@ -21253,7 +21112,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swm",
+									"_key": "hgfc-shining-swe",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -21267,7 +21126,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-shining-swn",
+									"_key": "hgfc-shining-swf",
 									"text": "Gガンダムのファン、HGFCのゴッドガンダムを持っている人に。",
 									"marks": []
 								}
@@ -21310,7 +21169,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-swo",
+									"_key": "hgfc-master-gundam-swg",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -21324,7 +21183,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-swp",
+									"_key": "hgfc-master-gundam-swh",
 									"text": "『機動武闘伝Gガンダム』で東方不敗マスター・アジアが乗るマスターガンダムと、馬型のMS・風雲再起をセットにしたHGFC。",
 									"marks": []
 								}
@@ -21338,7 +21197,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-swq",
+									"_key": "hgfc-master-gundam-swi",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -21352,7 +21211,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-swr",
+									"_key": "hgfc-master-gundam-swj",
 									"text": "マスターガンダムは黒い機体と布のようなマントが特徴。風雲再起に乗せた姿を飾れるのが、このキットならではの楽しみだ。",
 									"marks": []
 								}
@@ -21366,7 +21225,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-sws",
+									"_key": "hgfc-master-gundam-swk",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -21380,7 +21239,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-swt",
+									"_key": "hgfc-master-gundam-swl",
 									"text": "同じ月にはシャイニングガンダムのHGFCも発売された。前年のゴッドガンダムと合わせて、ドモンと師匠の機体がHGでそろった。",
 									"marks": []
 								}
@@ -21394,7 +21253,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-swu",
+									"_key": "hgfc-master-gundam-swm",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -21408,7 +21267,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hgfc-master-gundam-swv",
+									"_key": "hgfc-master-gundam-swn",
 									"text": "Gガンダムのファン、師弟の対決を飾りたい人に。",
 									"marks": []
 								}
@@ -21451,7 +21310,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-sww",
+									"_key": "hg-age1-swo",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -21465,7 +21324,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-swx",
+									"_key": "hg-age1-swp",
 									"text": "『機動戦士ガンダムAGE』の第1世代の主役機、ガンダムAGE-1のHG。手足や胸を「ウェア」ごと付け替えて、別の姿に変わる機体だ。",
 									"marks": []
 								}
@@ -21479,7 +21338,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-swy",
+									"_key": "hg-age1-swq",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -21493,7 +21352,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-swz",
+									"_key": "hg-age1-swr",
 									"text": "部品が少なめで組みやすい。タイタスやスパローなどのウェアのHGも発売され、組み替えて遊べる。",
 									"marks": []
 								}
@@ -21507,7 +21366,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-sx0",
+									"_key": "hg-age1-sws",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -21521,7 +21380,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-sx1",
+									"_key": "hg-age1-swt",
 									"text": "ガンダムAGEは3世代の物語で、主役機もAGE-1、AGE-2、AGE-3と移り変わる。HGでそれぞれの世代をそろえられる。",
 									"marks": []
 								}
@@ -21535,7 +21394,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-sx2",
+									"_key": "hg-age1-swu",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -21549,7 +21408,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age1-sx3",
+									"_key": "hg-age1-swv",
 									"text": "ガンダムAGEのファン、初めてHGを作る子どもに。",
 									"marks": []
 								}
@@ -21592,7 +21451,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sx4",
+									"_key": "hguc-jesta-sww",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -21606,7 +21465,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sx5",
+									"_key": "hguc-jesta-swx",
 									"text": "『機動戦士ガンダムUC』で地球連邦軍の特殊部隊が使った量産型MS、ジェスタのHGUC。ジェガンの系譜にある精悍な機体だ。",
 									"marks": []
 								}
@@ -21620,7 +21479,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sx6",
+									"_key": "hguc-jesta-swy",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -21634,7 +21493,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sx7",
+									"_key": "hguc-jesta-swz",
 									"text": "HGUCらしく色分けされ、量産機らしい落ち着いた配色を再現している。のちにはジェスタ・キャノンなどの派生機も発売された。",
 									"marks": []
 								}
@@ -21648,7 +21507,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sx8",
+									"_key": "hguc-jesta-sx0",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -21662,7 +21521,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sx9",
+									"_key": "hguc-jesta-sx1",
 									"text": "プレミアムバンダイではシェザール隊の仕様違いも発売され、部隊をそろえる楽しみが広がった。",
 									"marks": []
 								}
@@ -21676,7 +21535,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sxa",
+									"_key": "hguc-jesta-sx2",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -21690,7 +21549,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-jesta-sxb",
+									"_key": "hguc-jesta-sx3",
 									"text": "UCのファン、量産機を並べたい人に。",
 									"marks": []
 								}
@@ -21708,6 +21567,147 @@
 					],
 					"series": [
 						"unicorn"
+					]
+				}
+			},
+			{
+				"id": "kit-rg-freedom",
+				"slug": "rg-freedom",
+				"status": "published",
+				"data": {
+					"title": "RG 1/144 ZGMF-X10A フリーダムガンダム",
+					"model_number": "ZGMF-X10A",
+					"release_year": 2011,
+					"released": "2011-11",
+					"scale": "1/144",
+					"tier": "recommended",
+					"summary": "青い翼のフリーダムを1/144の精密さで。SEEDのRGの代表。",
+					"curator_note": "翼を広げた小さなフリーダムに、RGの技術が詰まっている。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sx4",
+									"text": "どんなキット",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sx5",
+									"text": "『機動戦士ガンダムSEED』でキラが乗るフリーダムのRG。背中の青い翼と、腰のレールガンを細かく再現している。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sx6",
+									"text": "組みどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sx7",
+									"text": "翼を広げると、小さなサイズでも華やかな姿になる。関節がよく動き、空中で全砲門を構えるポーズも決まる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sx8",
+									"text": "ガンプラ史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sx9",
+									"text": "翌年にはジャスティスのRGも発売され、キラとアスランの2機がRGでそろった。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sxa",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-freedom-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-freedom-sxb",
+									"text": "SEEDのファン、精密な1/144を作りたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": ""
+				},
+				"taxonomies": {
+					"era": [
+						"rg"
+					],
+					"grade": [
+						"rg"
+					],
+					"series": [
+						"seed"
 					]
 				}
 			},
@@ -22699,147 +22699,6 @@
 				}
 			},
 			{
-				"id": "kit-rg-justice",
-				"slug": "rg-justice",
-				"status": "published",
-				"data": {
-					"title": "RG 1/144 ZGMF-X09A ジャスティスガンダム",
-					"model_number": "ZGMF-X09A",
-					"release_year": 2012,
-					"released": "2012-05",
-					"scale": "1/144",
-					"tier": "deep",
-					"summary": "アスランの最初のジャスティスをRGで。背中のリフターが特徴。",
-					"curator_note": "フリーダムの隣に置くために生まれたような一体。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "rg-justice-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-syw",
-									"text": "どんなキット",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-justice-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-syx",
-									"text": "『機動戦士ガンダムSEED』でアスラン・ザラが乗るジャスティスガンダムのRG。背中の飛行ユニット「ファトゥム-00」が特徴だ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-justice-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-syy",
-									"text": "組みどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-justice-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-syz",
-									"text": "リフターは取り外して、乗り物のように飾ることもできる。赤い機体は、成形色の濃淡で細かく塗り分けられている。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-justice-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-sz0",
-									"text": "ガンプラ史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-justice-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-sz1",
-									"text": "前年のフリーダムのRGと対になるキット。並べると、SEEDの前半の名場面がよみがえる。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-justice-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-sz2",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-justice-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-justice-sz3",
-									"text": "SEEDのファン、アスランの機体が好きな人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": ""
-				},
-				"taxonomies": {
-					"era": [
-						"rg"
-					],
-					"grade": [
-						"rg"
-					],
-					"series": [
-						"seed"
-					]
-				}
-			},
-			{
 				"id": "kit-hg-age2-dark-hound",
 				"slug": "hg-age2-dark-hound",
 				"status": "published",
@@ -22861,7 +22720,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-sz4",
+									"_key": "hg-age2-dark-hound-syw",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -22875,7 +22734,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-sz5",
+									"_key": "hg-age2-dark-hound-syx",
 									"text": "『機動戦士ガンダムAGE』の第3部で、宇宙海賊となったアセム・アスノが乗るガンダムAGE-2 ダークハウンドのHG。黒と赤の配色が特徴だ。",
 									"marks": []
 								}
@@ -22889,7 +22748,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-sz6",
+									"_key": "hg-age2-dark-hound-syy",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -22903,7 +22762,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-sz7",
+									"_key": "hg-age2-dark-hound-syz",
 									"text": "AGE-2を海賊仕様に改修した機体で、頭の形や武器が通常のAGE-2と違う。成形色で色分けされ、素組みでも見栄えがする。",
 									"marks": []
 								}
@@ -22917,7 +22776,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-sz8",
+									"_key": "hg-age2-dark-hound-sz0",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -22931,7 +22790,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-sz9",
+									"_key": "hg-age2-dark-hound-sz1",
 									"text": "同じ年の11月にはMGのダークハウンドも発売された。AGEの中でも人気の高い機体の1つだ。",
 									"marks": []
 								}
@@ -22945,7 +22804,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-sza",
+									"_key": "hg-age2-dark-hound-sz2",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -22959,7 +22818,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age2-dark-hound-szb",
+									"_key": "hg-age2-dark-hound-sz3",
 									"text": "AGEのファン、黒い機体が好きな人に。",
 									"marks": []
 								}
@@ -22981,28 +22840,28 @@
 				}
 			},
 			{
-				"id": "kit-legendbb-musha-gundam",
-				"slug": "legendbb-musha-gundam",
+				"id": "kit-rg-justice",
+				"slug": "rg-justice",
 				"status": "published",
 				"data": {
-					"title": "LEGENDBB 武者頑駄無",
-					"model_number": "",
+					"title": "RG 1/144 ZGMF-X09A ジャスティスガンダム",
+					"model_number": "ZGMF-X09A",
 					"release_year": 2012,
 					"released": "2012-07",
-					"scale": "",
-					"tier": "recommended",
-					"summary": "SD戦国伝の始まりの武者を、LEGEND BBで作り直す。",
-					"curator_note": "武者ガンダムの原点が、細かな色分けでよみがえった。",
+					"scale": "1/144",
+					"tier": "deep",
+					"summary": "アスランの最初のジャスティスをRGで。背中のリフターが特徴。",
+					"curator_note": "フリーダムの隣に置くために生まれたような一体。",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b0",
+							"_key": "rg-justice-b0",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-szc",
+									"_key": "rg-justice-sz4",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -23010,27 +22869,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b1",
+							"_key": "rg-justice-b1",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-szd",
-									"text": "SD戦国伝の始まりを飾った武者頑駄無を、LEGEND BBで作り直したキット。兜飾りや鎧の細部まで作り込まれている。",
+									"_key": "rg-justice-sz5",
+									"text": "『機動戦士ガンダムSEED』でアスラン・ザラが乗るジャスティスガンダムのRG。背中の飛行ユニット「ファトゥム-00」が特徴だ。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b2",
+							"_key": "rg-justice-b2",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-sze",
+									"_key": "rg-justice-sz6",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -23038,27 +22897,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b3",
+							"_key": "rg-justice-b3",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-szf",
-									"text": "今の技術で色分けされ、シールを貼れば昔のBB戦士より手間をかけずに完成度の高い姿になる。",
+									"_key": "rg-justice-sz7",
+									"text": "リフターは取り外して、乗り物のように飾ることもできる。赤い機体は、成形色の濃淡で細かく塗り分けられている。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b4",
+							"_key": "rg-justice-b4",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-szg",
+									"_key": "rg-justice-sz8",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -23066,27 +22925,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b5",
+							"_key": "rg-justice-b5",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-szh",
-									"text": "武者ガンダムは80年代後半のSDブームの中心だった。LEGEND BBは、その世代のファンに向けて名キャラクターを再び商品化した。",
+									"_key": "rg-justice-sz9",
+									"text": "前年のフリーダムのRGと対になるキット。並べると、SEEDの前半の名場面がよみがえる。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b6",
+							"_key": "rg-justice-b6",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-szi",
+									"_key": "rg-justice-sza",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -23094,14 +22953,14 @@
 						},
 						{
 							"_type": "block",
-							"_key": "legendbb-musha-gundam-b7",
+							"_key": "rg-justice-b7",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "legendbb-musha-gundam-szj",
-									"text": "SD戦国伝が好きだった人、武者ガンダムを飾りたい人に。",
+									"_key": "rg-justice-szb",
+									"text": "SEEDのファン、アスランの機体が好きな人に。",
 									"marks": []
 								}
 							]
@@ -23114,10 +22973,10 @@
 						"rg"
 					],
 					"grade": [
-						"sd"
+						"rg"
 					],
 					"series": [
-						"sd"
+						"seed"
 					]
 				}
 			},
@@ -23143,7 +23002,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szk",
+									"_key": "hg-age-fx-szc",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -23157,7 +23016,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szl",
+									"_key": "hg-age-fx-szd",
 									"text": "『機動戦士ガンダムAGE』の第3世代の最終機、ガンダムAGE-FXのHG。白い機体と、全身に付いた小さな刃「Cファンネル」が特徴だ。",
 									"marks": []
 								}
@@ -23171,7 +23030,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szm",
+									"_key": "hg-age-fx-sze",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -23185,7 +23044,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szn",
+									"_key": "hg-age-fx-szf",
 									"text": "細身の体で、動きのあるポーズが似合う。",
 									"marks": []
 								}
@@ -23199,7 +23058,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szo",
+									"_key": "hg-age-fx-szg",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -23213,7 +23072,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szp",
+									"_key": "hg-age-fx-szh",
 									"text": "AGE-1から始まった主役機の系譜の最後の姿。3世代の主役機を並べると、物語の流れがわかる。",
 									"marks": []
 								}
@@ -23227,7 +23086,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szq",
+									"_key": "hg-age-fx-szi",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -23241,7 +23100,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-age-fx-szr",
+									"_key": "hg-age-fx-szj",
 									"text": "ガンダムAGEのファン、ファンネルを持つ機体が好きな人に。",
 									"marks": []
 								}
@@ -23284,7 +23143,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szs",
+									"_key": "hguc-hambrabi-szk",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -23298,7 +23157,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szt",
+									"_key": "hguc-hambrabi-szl",
 									"text": "『機動戦士Ζガンダム』でヤザン・ゲーブルの隊が使った可変MS、ハンブラビのHGUC。エイのような平たい形が特徴だ。",
 									"marks": []
 								}
@@ -23312,7 +23171,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szu",
+									"_key": "hguc-hambrabi-szm",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -23326,7 +23185,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szv",
+									"_key": "hguc-hambrabi-szn",
 									"text": "今のHGUCらしい色分けで、独特な形の機体をすっきりと再現している。素組みでも設定に近い姿になる。",
 									"marks": []
 								}
@@ -23340,7 +23199,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szw",
+									"_key": "hguc-hambrabi-szo",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -23354,7 +23213,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szx",
+									"_key": "hguc-hambrabi-szp",
 									"text": "1985年の旧キット以来、長く新しいキットがなかった機体。HGUCがΖガンダムの敵MSを次々とそろえていった流れの1体だ。",
 									"marks": []
 								}
@@ -23368,7 +23227,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szy",
+									"_key": "hguc-hambrabi-szq",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -23382,7 +23241,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-hambrabi-szz",
+									"_key": "hguc-hambrabi-szr",
 									"text": "Ζガンダムのファン、ティターンズのMSが好きな人に。",
 									"marks": []
 								}
@@ -23425,7 +23284,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s100",
+									"_key": "hguc-gm-sniper2-szs",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -23439,7 +23298,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s101",
+									"_key": "hguc-gm-sniper2-szt",
 									"text": "『0080』に登場するジム・スナイパーIIのHGUC。ジム系の中でも高性能な機体で、大きなスナイパーライフルを持つ。",
 									"marks": []
 								}
@@ -23453,7 +23312,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s102",
+									"_key": "hguc-gm-sniper2-szu",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -23467,7 +23326,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s103",
+									"_key": "hguc-gm-sniper2-szv",
 									"text": "関節がよく動き、ライフルを構えた狙撃のポーズが決まる。ジムらしい顔に、細身の体形が特徴だ。",
 									"marks": []
 								}
@@ -23481,7 +23340,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s104",
+									"_key": "hguc-gm-sniper2-szw",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -23495,7 +23354,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s105",
+									"_key": "hguc-gm-sniper2-szx",
 									"text": "量産機でありながら主役級の人気を持つジムのひとつ。ホワイト・ディンゴ隊仕様など、色違いのキットもある。",
 									"marks": []
 								}
@@ -23509,7 +23368,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s106",
+									"_key": "hguc-gm-sniper2-szy",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -23523,7 +23382,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hguc-gm-sniper2-s107",
+									"_key": "hguc-gm-sniper2-szz",
 									"text": "ジム系のMSが好きな人、量産機をかっこよく作りたい人に。",
 									"marks": []
 								}
@@ -23541,6 +23400,147 @@
 					],
 					"series": [
 						"0080"
+					]
+				}
+			},
+			{
+				"id": "kit-legendbb-musha-gundam",
+				"slug": "legendbb-musha-gundam",
+				"status": "published",
+				"data": {
+					"title": "LEGENDBB 武者頑駄無",
+					"model_number": "",
+					"release_year": 2012,
+					"released": "2012-10",
+					"scale": "",
+					"tier": "recommended",
+					"summary": "SD戦国伝の始まりの武者を、LEGEND BBで作り直す。",
+					"curator_note": "武者ガンダムの原点が、細かな色分けでよみがえった。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s100",
+									"text": "どんなキット",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s101",
+									"text": "SD戦国伝の始まりを飾った武者頑駄無を、LEGEND BBで作り直したキット。兜飾りや鎧の細部まで作り込まれている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s102",
+									"text": "組みどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s103",
+									"text": "今の技術で色分けされ、シールを貼れば昔のBB戦士より手間をかけずに完成度の高い姿になる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s104",
+									"text": "ガンプラ史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s105",
+									"text": "武者ガンダムは80年代後半のSDブームの中心だった。LEGEND BBは、その世代のファンに向けて名キャラクターを再び商品化した。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s106",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "legendbb-musha-gundam-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "legendbb-musha-gundam-s107",
+									"text": "SD戦国伝が好きだった人、武者ガンダムを飾りたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": ""
+				},
+				"taxonomies": {
+					"era": [
+						"rg"
+					],
+					"grade": [
+						"sd"
+					],
+					"series": [
+						"sd"
 					]
 				}
 			},
@@ -29044,147 +29044,6 @@
 				}
 			},
 			{
-				"id": "kit-rg-00-raiser",
-				"slug": "rg-00-raiser",
-				"status": "published",
-				"data": {
-					"title": "RG 1/144 GN-0000+GNR-010 ダブルオーライザー",
-					"model_number": "GN-0000+GNR-010",
-					"release_year": 2014,
-					"released": "2014-12",
-					"scale": "1/144",
-					"tier": "deep",
-					"summary": "ダブルオーガンダムとオーライザーの合体した姿をRGで。",
-					"curator_note": "両肩のGNドライヴと背中のオーライザー。RGでも存在感は大きい。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s18w",
-									"text": "どんなキット",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s18x",
-									"text": "『機動戦士ガンダム00』のセカンドシーズンの主役機、ダブルオーライザーのRG。ダブルオーガンダムに支援機オーライザーを合体させた姿だ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s18y",
-									"text": "組みどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s18z",
-									"text": "両肩のGNドライヴのクリアパーツと、背中のオーライザーが目を引く。GNソードIIIを構えたポーズが決まる。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s190",
-									"text": "ガンプラ史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s191",
-									"text": "エクシアのRGに続くガンダム00のRG。のちにダブルオークアンタのRGも発売された。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s192",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "rg-00-raiser-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "rg-00-raiser-s193",
-									"text": "ガンダム00のファン、RGでガンダム00の機体をそろえたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": ""
-				},
-				"taxonomies": {
-					"era": [
-						"build"
-					],
-					"grade": [
-						"rg"
-					],
-					"series": [
-						"00"
-					]
-				}
-			},
-			{
 				"id": "kit-rg-wing-zero-ew",
 				"slug": "rg-wing-zero-ew",
 				"status": "published",
@@ -29206,7 +29065,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s194",
+									"_key": "rg-wing-zero-ew-s18w",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -29220,7 +29079,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s195",
+									"_key": "rg-wing-zero-ew-s18x",
 									"text": "EW版のウイングガンダムゼロのRG。羽根の重なった大きな翼を、小さなサイズで細かく再現している。",
 									"marks": []
 								}
@@ -29234,7 +29093,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s196",
+									"_key": "rg-wing-zero-ew-s18y",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -29248,7 +29107,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s197",
+									"_key": "rg-wing-zero-ew-s18z",
 									"text": "翼を広げたり閉じたりでき、天使のような姿で飾れる。ネオバード形態への変形も再現されている。",
 									"marks": []
 								}
@@ -29262,7 +29121,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s198",
+									"_key": "rg-wing-zero-ew-s190",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -29276,7 +29135,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s199",
+									"_key": "rg-wing-zero-ew-s191",
 									"text": "EW版のウイングゼロは、PG、MG、RG、HGとそろう人気の機体。RG版は、手ごろな大きさで翼の美しさを楽しめる。",
 									"marks": []
 								}
@@ -29290,7 +29149,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s19a",
+									"_key": "rg-wing-zero-ew-s192",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -29304,7 +29163,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-wing-zero-ew-s19b",
+									"_key": "rg-wing-zero-ew-s193",
 									"text": "ガンダムWのファン、翼の美しい機体を飾りたい人に。",
 									"marks": []
 								}
@@ -29347,7 +29206,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19c",
+									"_key": "re100-mk3-s194",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -29361,7 +29220,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19d",
+									"_key": "re100-mk3-s195",
 									"text": "『Ζ-MSV』などに登場するガンダムMk-IIIを、RE/100で立体化したキット。ガンダムMk-IIの発展型にあたる機体だ。",
 									"marks": []
 								}
@@ -29375,7 +29234,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19e",
+									"_key": "re100-mk3-s196",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -29389,7 +29248,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19f",
+									"_key": "re100-mk3-s197",
 									"text": "RE/100は内部フレームを持たない代わりに、部品を減らして作りやすくした1/100。外装の形と色分けで見栄えを出している。",
 									"marks": []
 								}
@@ -29403,7 +29262,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19g",
+									"_key": "re100-mk3-s198",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -29417,7 +29276,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19h",
+									"_key": "re100-mk3-s199",
 									"text": "2014年のナイチンゲールに続くRE/100の2作目。MGでは出にくい機体を1/100でそろえるシリーズの方向が、ここで見えてきた。",
 									"marks": []
 								}
@@ -29431,7 +29290,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19i",
+									"_key": "re100-mk3-s19a",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -29445,7 +29304,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-mk3-s19j",
+									"_key": "re100-mk3-s19b",
 									"text": "MSVやバリエーション機が好きな人、1/100を手軽に作りたい人に。",
 									"marks": []
 								}
@@ -29488,7 +29347,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19k",
+									"_key": "hg-try-burning-s19c",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -29502,7 +29361,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19l",
+									"_key": "hg-try-burning-s19d",
 									"text": "『ガンダムビルドファイターズトライ』の主人公カミキ・セカイの機体、トライバーニングガンダムのHG。格闘技で戦う機体で、Gガンダムの流れをくむデザインになっている。",
 									"marks": []
 								}
@@ -29516,7 +29375,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19m",
+									"_key": "hg-try-burning-s19e",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -29530,7 +29389,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19n",
+									"_key": "hg-try-burning-s19f",
 									"text": "関節がよく動き、拳や蹴りのポーズが決まる。",
 									"marks": []
 								}
@@ -29544,7 +29403,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19o",
+									"_key": "hg-try-burning-s19g",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -29558,7 +29417,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19p",
+									"_key": "hg-try-burning-s19h",
 									"text": "ビルドシリーズの機体は、過去のガンダムを改造したという設定でデザインされている。作中の設定を知ると、元になった機体を探す楽しみも生まれる。",
 									"marks": []
 								}
@@ -29572,7 +29431,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19q",
+									"_key": "hg-try-burning-s19i",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -29586,7 +29445,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-try-burning-s19r",
+									"_key": "hg-try-burning-s19j",
 									"text": "ビルドシリーズのファン、格闘ポーズで遊びたい人に。",
 									"marks": []
 								}
@@ -29629,7 +29488,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19s",
+									"_key": "hg-origin-char-zaku-s19k",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -29643,7 +29502,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19t",
+									"_key": "hg-origin-char-zaku-s19l",
 									"text": "OVA『機動戦士ガンダム THE ORIGIN』に登場するシャア専用ザクIIのHG。アニメ版よりも重厚な体つきで、細部のデザインが描き直されている。",
 									"marks": []
 								}
@@ -29657,7 +29516,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19u",
+									"_key": "hg-origin-char-zaku-s19m",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -29671,7 +29530,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19v",
+									"_key": "hg-origin-char-zaku-s19n",
 									"text": "関節がよく動き、ザク・マシンガンを構えたポーズが決まる。赤の濃淡も成形色で分けられている。",
 									"marks": []
 								}
@@ -29685,7 +29544,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19w",
+									"_key": "hg-origin-char-zaku-s19o",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -29699,7 +29558,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19x",
+									"_key": "hg-origin-char-zaku-s19p",
 									"text": "THE ORIGINのHGは、一年戦争の前の時代のMSも含めて数多く発売された。2019年には「赤い彗星Ver.」も登場している。",
 									"marks": []
 								}
@@ -29713,7 +29572,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19y",
+									"_key": "hg-origin-char-zaku-s19q",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -29727,7 +29586,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hg-origin-char-zaku-s19z",
+									"_key": "hg-origin-char-zaku-s19r",
 									"text": "THE ORIGINのファン、シャア専用機をそろえたい人に。",
 									"marks": []
 								}
@@ -29770,7 +29629,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a0",
+									"_key": "re100-gerbera-s19s",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -29784,7 +29643,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a1",
+									"_key": "re100-gerbera-s19t",
 									"text": "『0083』の設定に登場するガンダム試作4号機ガーベラのRE/100。劇中には登場しないが、設定画の段階で人気を集めた機体だ。",
 									"marks": []
 								}
@@ -29798,7 +29657,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a2",
+									"_key": "re100-gerbera-s19u",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -29812,7 +29671,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a3",
+									"_key": "re100-gerbera-s19v",
 									"text": "内部構造を簡略化したRE/100らしく、組みやすい。大きなバックパックが特徴的な姿を1/100で楽しめる。",
 									"marks": []
 								}
@@ -29826,7 +29685,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a4",
+									"_key": "re100-gerbera-s19w",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -29840,7 +29699,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a5",
+									"_key": "re100-gerbera-s19x",
 									"text": "RE/100は、こうした「MGでは出しにくいが人気のある機体」を選んで立体化してきた。0083の試作機を並べる楽しみも広がった。",
 									"marks": []
 								}
@@ -29854,7 +29713,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a6",
+									"_key": "re100-gerbera-s19y",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -29868,7 +29727,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "re100-gerbera-s1a7",
+									"_key": "re100-gerbera-s19z",
 									"text": "0083のファン、マニアックな機体が好きな人に。",
 									"marks": []
 								}
@@ -29886,6 +29745,147 @@
 					],
 					"series": [
 						"0083"
+					]
+				}
+			},
+			{
+				"id": "kit-rg-00-raiser",
+				"slug": "rg-00-raiser",
+				"status": "published",
+				"data": {
+					"title": "RG 1/144 GN-0000+GNR-010 ダブルオーライザー",
+					"model_number": "GN-0000+GNR-010",
+					"release_year": 2015,
+					"released": "2015-04",
+					"scale": "1/144",
+					"tier": "deep",
+					"summary": "ダブルオーガンダムとオーライザーの合体した姿をRGで。",
+					"curator_note": "両肩のGNドライヴと背中のオーライザー。RGでも存在感は大きい。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a0",
+									"text": "どんなキット",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a1",
+									"text": "『機動戦士ガンダム00』のセカンドシーズンの主役機、ダブルオーライザーのRG。ダブルオーガンダムに支援機オーライザーを合体させた姿だ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a2",
+									"text": "組みどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a3",
+									"text": "両肩のGNドライヴのクリアパーツと、背中のオーライザーが目を引く。GNソードIIIを構えたポーズが決まる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a4",
+									"text": "ガンプラ史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a5",
+									"text": "エクシアのRGに続くガンダム00のRG。のちにダブルオークアンタのRGも発売された。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a6",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "rg-00-raiser-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "rg-00-raiser-s1a7",
+									"text": "ガンダム00のファン、RGでガンダム00の機体をそろえたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": ""
+				},
+				"taxonomies": {
+					"era": [
+						"build"
+					],
+					"grade": [
+						"rg"
+					],
+					"series": [
+						"00"
 					]
 				}
 			},
@@ -37788,147 +37788,6 @@
 				}
 			},
 			{
-				"id": "kit-mg-zz-verka",
-				"slug": "mg-zz-verka",
-				"status": "published",
-				"data": {
-					"title": "MG 1/100 ダブルゼータガンダム Ver.Ka",
-					"model_number": "MSZ-010",
-					"release_year": 2017,
-					"released": "2017-09",
-					"scale": "1/100",
-					"tier": "recommended",
-					"summary": "分離・変形・合体する大型のガンダム。Ver.Kaでよみがえった。",
-					"curator_note": "3つに分かれて飛ぶ。ZZらしさを全部詰め込んだキット。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1mo",
-									"text": "どんなキット",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1mp",
-									"text": "『機動戦士ガンダムΖΖ』の主役機を、Ver.Kaとして作り直した1/100キット。上半身・下半身・コア・ファイターに分かれ、それぞれが戦闘機になる仕組みを再現している。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1mq",
-									"text": "組みどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1mr",
-									"text": "大柄な機体で、頭のハイ・メガ・キャノンや背中の大きなビームサーベルが迫力を出している。変形の手順は多いが、完成したときの満足感は大きい。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1ms",
-									"text": "ガンプラ史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1mt",
-									"text": "1999年の初代MGから約18年ぶりのリニューアル。2026年にはフルアーマーZZガンダム Ver.Kaも発売され、ZZのMGはさらに充実した。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1mu",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "mg-zz-verka-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "mg-zz-verka-s1mv",
-									"text": "ΖΖのファン、変形・合体のギミックが好きな人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": ""
-				},
-				"taxonomies": {
-					"era": [
-						"build"
-					],
-					"grade": [
-						"mg"
-					],
-					"series": [
-						"zz"
-					]
-				}
-			},
-			{
 				"id": "kit-hirm-wing-zero-ew",
 				"slug": "hirm-wing-zero-ew",
 				"status": "published",
@@ -37950,7 +37809,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1mw",
+									"_key": "hirm-wing-zero-ew-s1mo",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -37964,7 +37823,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1mx",
+									"_key": "hirm-wing-zero-ew-s1mp",
 									"text": "EW版のウイングガンダムゼロのハイレゾリューションモデル。金属の部品を使ったフレームに、細かく作り込まれた外装と大きな翼を付けていく。",
 									"marks": []
 								}
@@ -37978,7 +37837,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1my",
+									"_key": "hirm-wing-zero-ew-s1mq",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -37992,7 +37851,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1mz",
+									"_key": "hirm-wing-zero-ew-s1mr",
 									"text": "翼の羽根は細かく作られ、広げると華やかな姿になる。完成品は重みがあり、飾ったときの安定感がある。",
 									"marks": []
 								}
@@ -38006,7 +37865,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1n0",
+									"_key": "hirm-wing-zero-ew-s1ms",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -38020,7 +37879,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1n1",
+									"_key": "hirm-wing-zero-ew-s1mt",
 									"text": "ウイングゼロEWは、PG、MG、RG、HGに加えてハイレゾでも立体化された。それぞれのグレードで違う魅力がある。",
 									"marks": []
 								}
@@ -38034,7 +37893,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1n2",
+									"_key": "hirm-wing-zero-ew-s1mu",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -38048,7 +37907,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hirm-wing-zero-ew-s1n3",
+									"_key": "hirm-wing-zero-ew-s1mv",
 									"text": "ガンダムWのファン、飾って映える高級なキットを探している人に。",
 									"marks": []
 								}
@@ -38091,7 +37950,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1n4",
+									"_key": "rg-johnny-ridden-zaku-s1mw",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -38105,7 +37964,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1n5",
+									"_key": "rg-johnny-ridden-zaku-s1mx",
 									"text": "『モビルスーツバリエーション(MSV)』に登場する、ジョニー・ライデン専用の高機動型ザクIIのRG。赤と黒の配色と、大きなバックパックが特徴だ。",
 									"marks": []
 								}
@@ -38119,7 +37978,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1n6",
+									"_key": "rg-johnny-ridden-zaku-s1my",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -38133,7 +37992,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1n7",
+									"_key": "rg-johnny-ridden-zaku-s1mz",
 									"text": "関節がよく動き、高機動型らしい飛び回るようなポーズが決まる。",
 									"marks": []
 								}
@@ -38147,7 +38006,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1n8",
+									"_key": "rg-johnny-ridden-zaku-s1n0",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -38161,7 +38020,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1n9",
+									"_key": "rg-johnny-ridden-zaku-s1n1",
 									"text": "MSVはアニメではなく、プラモデルと設定資料から広がった企画。ジョニー・ライデンはその代表的なキャラクターとして、40年以上愛され続けている。",
 									"marks": []
 								}
@@ -38175,7 +38034,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1na",
+									"_key": "rg-johnny-ridden-zaku-s1n2",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -38189,7 +38048,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "rg-johnny-ridden-zaku-s1nb",
+									"_key": "rg-johnny-ridden-zaku-s1n3",
 									"text": "MSVのファン、赤い機体が好きな人に。",
 									"marks": []
 								}
@@ -38207,6 +38066,147 @@
 					],
 					"series": [
 						"msv"
+					]
+				}
+			},
+			{
+				"id": "kit-mg-zz-verka",
+				"slug": "mg-zz-verka",
+				"status": "published",
+				"data": {
+					"title": "MG 1/100 ダブルゼータガンダム Ver.Ka",
+					"model_number": "MSZ-010",
+					"release_year": 2017,
+					"released": "2017-12",
+					"scale": "1/100",
+					"tier": "recommended",
+					"summary": "分離・変形・合体する大型のガンダム。Ver.Kaでよみがえった。",
+					"curator_note": "3つに分かれて飛ぶ。ZZらしさを全部詰め込んだキット。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1n4",
+									"text": "どんなキット",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1n5",
+									"text": "『機動戦士ガンダムΖΖ』の主役機を、Ver.Kaとして作り直した1/100キット。上半身・下半身・コア・ファイターに分かれ、それぞれが戦闘機になる仕組みを再現している。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1n6",
+									"text": "組みどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1n7",
+									"text": "大柄な機体で、頭のハイ・メガ・キャノンや背中の大きなビームサーベルが迫力を出している。変形の手順は多いが、完成したときの満足感は大きい。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1n8",
+									"text": "ガンプラ史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1n9",
+									"text": "1999年の初代MGから約18年ぶりのリニューアル。2026年にはフルアーマーZZガンダム Ver.Kaも発売され、ZZのMGはさらに充実した。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1na",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "mg-zz-verka-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "mg-zz-verka-s1nb",
+									"text": "ΖΖのファン、変形・合体のギミックが好きな人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": ""
+				},
+				"taxonomies": {
+					"era": [
+						"build"
+					],
+					"grade": [
+						"mg"
+					],
+					"series": [
+						"zz"
 					]
 				}
 			},
@@ -43436,7 +43436,7 @@
 					"title": "SDガンダム クロスシルエット フェニックスガンダム",
 					"model_number": "",
 					"release_year": 2020,
-					"released": "2020-05",
+					"released": "2020-06",
 					"scale": "",
 					"tier": "deep",
 					"summary": "『Gジェネレーション』のオリジナル機を、クロスシルエットで。",
@@ -51047,147 +51047,6 @@
 				}
 			},
 			{
-				"id": "kit-hg-amazing-barbatos-lupus",
-				"slug": "hg-amazing-barbatos-lupus",
-				"status": "published",
-				"data": {
-					"title": "HG 1/144 ガンダムアメイジングバルバトスルプス",
-					"model_number": "",
-					"release_year": 2024,
-					"released": "2024-07",
-					"scale": "1/144",
-					"tier": "deep",
-					"summary": "『ガンダムビルドメタバース』に登場する、バルバトスルプスの改造機。",
-					"curator_note": "鉄血の主役機を、ビルドシリーズ流にアレンジ。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27k",
-									"text": "どんなキット",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27l",
-									"text": "『ガンダムビルドメタバース』に登場する、ガンダムアメイジングバルバトスルプスのHG。バルバトスルプスをもとに、大きく作り替えたガンプラという設定だ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27m",
-									"text": "組みどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27n",
-									"text": "組みやすく、大きな武器を構えたポーズが決まる。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27o",
-									"text": "ガンプラ史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27p",
-									"text": "ビルドシリーズは、過去の作品の機体を改造したガンプラが活躍するのが魅力。もとのバルバトスルプスと並べると、改造の違いがわかる。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27q",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "hg-amazing-barbatos-lupus-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "hg-amazing-barbatos-lupus-s27r",
-									"text": "ビルドシリーズや鉄血のオルフェンズのファンに。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": ""
-				},
-				"taxonomies": {
-					"era": [
-						"now"
-					],
-					"grade": [
-						"hg"
-					],
-					"series": [
-						"build"
-					]
-				}
-			},
-			{
 				"id": "kit-eg-gunbarrel-strike",
 				"slug": "eg-gunbarrel-strike",
 				"status": "published",
@@ -51209,7 +51068,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27s",
+									"_key": "eg-gunbarrel-strike-s27k",
 									"text": "どんなキット",
 									"marks": []
 								}
@@ -51223,7 +51082,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27t",
+									"_key": "eg-gunbarrel-strike-s27l",
 									"text": "EGのストライクガンダムをもとに、ガンバレルストライカーを装備した姿を立体化したキット。ゲーム『ガンダムブレイカー』に合わせた仕様だ。",
 									"marks": []
 								}
@@ -51237,7 +51096,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27u",
+									"_key": "eg-gunbarrel-strike-s27m",
 									"text": "組みどころ",
 									"marks": []
 								}
@@ -51251,7 +51110,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27v",
+									"_key": "eg-gunbarrel-strike-s27n",
 									"text": "EGらしく手で組める作りで、背中の装備を付ければ通常のストライクとは違う姿になる。ほかのEGと部品を組み合わせて遊ぶのも楽しい。",
 									"marks": []
 								}
@@ -51265,7 +51124,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27w",
+									"_key": "eg-gunbarrel-strike-s27o",
 									"text": "ガンプラ史の中で",
 									"marks": []
 								}
@@ -51279,7 +51138,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27x",
+									"_key": "eg-gunbarrel-strike-s27p",
 									"text": "ガンダムブレイカーはガンプラを組み替えて戦うゲームのシリーズ。ゲームとプラモデルが行き来する遊び方を、EGでも楽しめる。",
 									"marks": []
 								}
@@ -51293,7 +51152,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27y",
+									"_key": "eg-gunbarrel-strike-s27q",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -51307,7 +51166,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "eg-gunbarrel-strike-s27z",
+									"_key": "eg-gunbarrel-strike-s27r",
 									"text": "ガンダムブレイカーのプレイヤー、EGで改造に挑戦したい人に。",
 									"marks": []
 								}
@@ -51325,6 +51184,147 @@
 					],
 					"series": [
 						"seed"
+					]
+				}
+			},
+			{
+				"id": "kit-hg-amazing-barbatos-lupus",
+				"slug": "hg-amazing-barbatos-lupus",
+				"status": "published",
+				"data": {
+					"title": "HG 1/144 ガンダムアメイジングバルバトスルプス",
+					"model_number": "",
+					"release_year": 2024,
+					"released": "2024-08",
+					"scale": "1/144",
+					"tier": "deep",
+					"summary": "『ガンダムビルドメタバース』に登場する、バルバトスルプスの改造機。",
+					"curator_note": "鉄血の主役機を、ビルドシリーズ流にアレンジ。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27s",
+									"text": "どんなキット",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27t",
+									"text": "『ガンダムビルドメタバース』に登場する、ガンダムアメイジングバルバトスルプスのHG。バルバトスルプスをもとに、大きく作り替えたガンプラという設定だ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27u",
+									"text": "組みどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27v",
+									"text": "組みやすく、大きな武器を構えたポーズが決まる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27w",
+									"text": "ガンプラ史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27x",
+									"text": "ビルドシリーズは、過去の作品の機体を改造したガンプラが活躍するのが魅力。もとのバルバトスルプスと並べると、改造の違いがわかる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27y",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-amazing-barbatos-lupus-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-amazing-barbatos-lupus-s27z",
+									"text": "ビルドシリーズや鉄血のオルフェンズのファンに。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": ""
+				},
+				"taxonomies": {
+					"era": [
+						"now"
+					],
+					"grade": [
+						"hg"
+					],
+					"series": [
+						"build"
 					]
 				}
 			},

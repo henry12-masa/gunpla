@@ -215,7 +215,7 @@ export default [
 		]),
 
 	// ---- ガンダム・センチネル
-	k("hguc-s-gundam", "HGUC 1/144 MSA-0011 Sガンダム", "MSA-0011", "2001-08", "1/144", "hg", "sentinel", "deep",
+	k("hguc-s-gundam", "HGUC 1/144 MSA-0011 Sガンダム", "MSA-0011", "2001-09", "1/144", "hg", "sentinel", "deep",
 		"『ガンダム・センチネル』の主役機を、初期のHGUCで。",
 		"雑誌の企画から生まれたガンダムが、1/144に。",
 		[

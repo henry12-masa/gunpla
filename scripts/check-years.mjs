@@ -3,13 +3,10 @@
 // 名簿は商品名の表記ゆれがあるので、グレードと発売年月が同じで名前が近いものを「一致」とみなす。
 import { readFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
+import { loadCatalog } from "../data/catalog/load.mjs";
 import { resolve } from "node:path";
 
-const raw = [
-	...JSON.parse(readFileSync(new URL("../data/catalog/raw.json", import.meta.url), "utf8")),
-	...JSON.parse(readFileSync(new URL("../data/catalog/gundamwiki.json", import.meta.url), "utf8")),
-	...JSON.parse(readFileSync(new URL("../data/catalog/additions.json", import.meta.url), "utf8")),
-];
+const raw = loadCatalog();
 import { coreName as core, GRADE_OF_RAW } from "../data/kit-key.mjs";
 const GRADE = Object.fromEntries(Object.entries(GRADE_OF_RAW).map(([raw, slug]) => [slug, raw]));
 let bad = 0, miss = 0, ok = 0;

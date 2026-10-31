@@ -8,9 +8,10 @@ import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { games } from "../data/catalog.mjs";
 import { GRADES } from "../data/taxonomies.mjs";
 import { coreName, GRADE_OF_RAW } from "../data/kit-key.mjs";
+import { loadCatalog } from "../data/catalog/load.mjs";
 
 const read = (name) => JSON.parse(readFileSync(new URL(`../data/catalog/${name}`, import.meta.url), "utf8"));
-const raw = [...read("raw.json"), ...read("gundamwiki.json"), ...read("additions.json")];
+const raw = loadCatalog();
 // 名簿の更新日(日本時間)
 const TODAY = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 const OUT = new URL("../public/catalog-data/", import.meta.url);

@@ -37,7 +37,8 @@
 1. `scripts/catalog/fetch.mjs <記事名...>` で記事のHTMLを取得
 2. `python scripts/catalog/extract.py`(表は `tparse.py` で読む)で `kits.json` を作り、`data/catalog/raw.json` に置く
 3. Gundam Wiki からの追加分は `scripts/catalog/gundamwiki/`(手順はその README)で `data/catalog/gundamwiki.json` を作る
-4. `node scripts/build-catalog.mjs` で `raw.json` + `gundamwiki.json` + `additions.json` を `public/catalog-data/` に書き出す(静的アセット、ASSETSバインディングで読む)
+4. BANDAI SPIRITS ホビーサイトの商品一覧(`https://bandai-hobby.net/item_all/?p=N&brand=<pg|mg|rg|hg|bb|...>&title=`、ブラウザ相当の Accept / Accept-Language ヘッダーが要る)と照合し、発売月が公式と違うものと Gundam Wiki 由来の名前の公式表記を `data/catalog/official-dates.json` に、名簿にない公式商品を `data/catalog/bandai-official.json`(`src: "bh"`)に置く。両ファイルは `data/catalog/load.mjs` が読み込み時に当てる
+5. `node scripts/build-catalog.mjs` で `load.mjs` が合わせた名簿を `public/catalog-data/` に書き出す(静的アセット、ASSETSバインディングで読む)
 
 ## 定期更新
 
