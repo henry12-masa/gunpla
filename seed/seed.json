@@ -53442,6 +53442,147 @@
 						"gquuuuuux"
 					]
 				}
+			},
+			{
+				"id": "kit-hg-vasago",
+				"slug": "hg-vasago",
+				"status": "published",
+				"data": {
+					"title": "HG 1/144 ガンダムヴァサーゴ",
+					"model_number": "NRX-0013",
+					"release_year": 2026,
+					"released": "2026-10",
+					"scale": "1/144",
+					"tier": "recommended",
+					"summary": "シャギア・フロストのガンダムを、今のHGで。",
+					"curator_note": "腕が伸び、腹が開く。ヴァサーゴらしい仕掛けを再現した新しいHG。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2bc",
+									"text": "どんなキット",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2bd",
+									"text": "『機動新世紀ガンダムX』で、フロスト兄弟の兄シャギア・フロストが乗るガンダムヴァサーゴ。2026年10月に、今のHGの作りで発売されたキットだ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2be",
+									"text": "組みどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2bf",
+									"text": "腕のストライククローが伸びる仕掛けと、メガソニック砲を撃つときに腹部が開く仕掛けを再現している。付属のストライクシューター2丁は、合体用のパーツでつないだ形にもできる。ビームサーベルも付く。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2bg",
+									"text": "ガンプラ史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2bh",
+									"text": "ヴァサーゴのHGは、放送当時の1996年にも発売されていた。今回のキットは、それから30年ぶりに作り直されたHGだ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2bi",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "hg-vasago-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "hg-vasago-s2bj",
+									"text": "ガンダムXのファン、フロスト兄弟の機体をそろえたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": ""
+				},
+				"taxonomies": {
+					"era": [
+						"now"
+					],
+					"grade": [
+						"hg"
+					],
+					"series": [
+						"x"
+					]
+				}
 			}
 		],
 		"posts": [
