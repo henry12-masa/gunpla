@@ -1,0 +1,70 @@
+---
+// 姉妹サイト「塗り継ぐ」(模型用塗料の色番号対応表)への案内
+---
+
+<aside class="paint-guide" aria-label="ガンプラを塗るときに">
+	<p class="paint-guide__head"><span class="paint-guide__site">塗り継ぐ</span>ガンプラを塗るときに</p>
+	<ul class="paint-guide__list">
+		<li><a href="https://paint.napoblog.com/" class="paint-guide__link"><span class="paint-guide__name">色番号の対応表</span><span class="paint-guide__lead">説明書の指定色を、手持ちの塗料の番号に置き換える</span></a></li>
+		<li><a href="https://paint.napoblog.com/posts/mrcolor-hobby-pairs" class="paint-guide__link"><span class="paint-guide__name">Mr.カラーと水性ホビーカラーの対応</span><span class="paint-guide__lead">番号が違う2つの塗料の公式の対応</span></a></li>
+		<li><a href="https://paint.napoblog.com/posts/thinner-guide" class="paint-guide__link"><span class="paint-guide__name">うすめ液と筆の洗い方</span><span class="paint-guide__lead">塗料ごとに使ううすめ液</span></a></li>
+		<li><a href="https://paint.napoblog.com/posts/airbrush-guide" class="paint-guide__link"><span class="paint-guide__name">はじめてのエアブラシ</span><span class="paint-guide__lead">入門機をメーカー公式の仕様で比べる</span></a></li>
+	</ul>
+</aside>
+
+<style>
+	.paint-guide {
+		display: grid;
+		gap: var(--spacing-3);
+		margin-block: var(--spacing-8);
+		padding: var(--spacing-5);
+		border-radius: var(--radius-xl);
+		background: var(--color-surface);
+		box-shadow: inset 0 0 0 1px var(--color-border);
+	}
+	.paint-guide__head {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-2);
+		font-size: var(--font-size-sm);
+		font-weight: 600;
+	}
+	.paint-guide__site {
+		padding: 0 0.45rem;
+		border-radius: var(--radius-sm);
+		background: var(--color-fill);
+		font-size: 0.6875rem;
+		font-weight: 500;
+		color: var(--color-muted);
+	}
+	.paint-guide__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+		gap: var(--spacing-2);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.paint-guide__link {
+		display: grid;
+		gap: 2px;
+		height: 100%;
+		padding: var(--spacing-3) var(--spacing-4);
+		border-radius: var(--radius-lg);
+		box-shadow: inset 0 0 0 1px var(--color-border);
+		color: var(--color-text);
+		text-decoration: none;
+	}
+	.paint-guide__link:hover {
+		background: var(--color-fill);
+	}
+	.paint-guide__name {
+		font-size: var(--font-size-sm);
+		font-weight: 600;
+	}
+	.paint-guide__lead,
+	.paint-guide__note {
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+</style>
